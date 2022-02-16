@@ -94,8 +94,4 @@ class QuoteGen extends React.Component {
       }
   }
 
-
-
-
-
 export default App;
