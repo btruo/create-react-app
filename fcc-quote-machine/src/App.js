@@ -15,7 +15,7 @@ function App() {
       <div id='quote-box' className="d-flex justify-content-center align-items-center">
         <QuoteGen />
       </div>
-        <div className="footer">By Brandon</div>
+        <div className="footer">By Brandon Truong</div>
     </div>
   );
 };
@@ -65,7 +65,7 @@ class QuoteGen extends React.Component {
 
       return (       
       <div className="row gx-2">
-    <div className="col box p-5 rounded">
+    <div className="col box p-5 rounded" id="boxed">
     { 
       ourQuote && (
         <div id='text'>
@@ -80,7 +80,7 @@ class QuoteGen extends React.Component {
         </div> 
         )
       }
-      <div className="d-flex justify-content-between">
+      <div className="d-flex justify-content-between buttons">
 
               <a className="btn btn-primary twitter" target="_blank" href={tweetURL}>
               <FontAwesomeIcon icon= {faTwitter}></FontAwesomeIcon> 
